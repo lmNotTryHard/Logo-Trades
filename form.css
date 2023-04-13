@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(img/form-background.png);
+    background-size: cover;
+}
+.form-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #004776CC;
+    border: 3px solid #FFFFFF66;
+    border-radius: 20px;
+    height: 600px;
+    width: 600px;
+    font-size: 1.1em;
+}
+.register{
+    height: 650px;
+}
+.input{
+    background: rgba(255, 255, 255, 0.13);
+}
+.button-4{
+    padding: 10px 140px 10px 140px;
+    font-size: 1.5em;
+}
+.form-box a{
+    text-decoration: none;
+    color: #ADADADA8;
+    font-size: 1.1em;
+}
