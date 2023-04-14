@@ -73,13 +73,12 @@ header{
     flex-direction: column;
     width: 1200px;
 }
-.main-box img{
-    border-radius: 20px;
-}
 .container{
     padding: 0;
 }
-
+.carousel-item{
+    height: 700px;
+}
 .footer-container{
     display: flex;
     align-items: center;
