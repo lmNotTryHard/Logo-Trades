@@ -1,3 +1,12 @@
+body::-webkit-scrollbar {
+    width: 10px;               /* ширина scrollbar */
+}
+  body::-webkit-scrollbar-track {
+    background: #ffffff;        /* цвет дорожки */
+}
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.400);    /* цвет плашки */
+}
 *{
     padding: 0;
     margin: 0;
@@ -5,6 +14,7 @@
 }
 body{
     font-family: 'Inria Sans', sans-serif;
+    cursor: default;
 }
 
 header{

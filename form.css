@@ -5,6 +5,7 @@ body{
     height: 100vh;
     background-image: url(img/form-background.png);
     background-size: cover;
+    cursor: default;
 }
 .form-box{
     display: flex;
