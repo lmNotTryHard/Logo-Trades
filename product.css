@@ -17,15 +17,13 @@ body{
     cursor: default;
 }
 
-header{
-    background-color: #0A2640;
-}
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 75px;
     max-height: 300px;
+    background-color: #0A2640;
 }
 .nav-bar{
     display: flex;
@@ -66,6 +64,9 @@ header{
     }
 }
 
+.main-txt{
+    margin-top: 120px;
+}
 .main-box-container{
     margin-top: 80px;
     display: flex;
