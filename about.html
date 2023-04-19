@@ -15,16 +15,21 @@
 </head>
 <body>
     <header>
-        <div class="nav">
+        <div class="container-fluid nav navbar navbar-expand-lg">
             <div class="logo">
                 <a href="index.html"><img src="img/logo-header.png" alt="Logo" width="100px"></a>
             </div>
-            <nav class="nav-bar">
-                    <a href="product.html">Product</a>
-                    <a href="#">About</a>
-                    <a href="index.html">Contacts</a>
-                    <a href="login.html"><button type="button" class="button-1">Login</button></a>
-            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcontent">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navcontent">
+                <nav class="nav-bar navbar-nav">
+                        <a href="product.html">Product</a>
+                        <a href="#">About</a>
+                        <a href="index.html">Contacts</a>
+                        <a href="login.html"><button type="button" class="button-1">Login</button></a>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -93,7 +98,7 @@
         </div>
     </footer>
 
-
+    <script src="https://kit.fontawesome.com/b54b080806.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

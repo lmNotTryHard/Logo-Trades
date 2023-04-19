@@ -14,21 +14,19 @@
 </head>
 <body>
     <header>
-        <div class="nav navbar navbar-expand-lg">
+        <div class="container-fluid nav navbar navbar-expand-lg">
             <div class="logo">
                 <a href="index.html"><img src="img/logo-header.png" alt="Logo" width="100px"></a>
-                <button class="navbar-toggler" type="button"
-                data-toggle="collapse" data-target="#navcontent" 
-                aria-controls="navcontent" aria-expanded="false" aria-label="toggle navigation">
-                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                </button>
             </div>
-            <div class="collapse navbar-collapse">
-                <nav class="nav-bar navbar-nav" id="navcontent">
-                        <a href="#">Product</a>
-                        <a href="about.html">About</a>
-                        <a href="index.html">Contacts</a>
-                        <a href="login.html"><button type="button" class="button-1">Login</button></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcontent">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navcontent">
+                <nav class="nav-bar navbar-nav">
+                        <a class="nav-item" href="#">Product</a>
+                        <a class="nav-item" href="about.html">About</a>
+                        <a class="nav-item" href="index.html">Contacts</a>
+                        <a class="nav-item" href="login.html"><button type="button" class="button-1">Login</button></a>
                 </nav>
             </div>
         </div>

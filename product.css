@@ -25,6 +25,7 @@ header{
     align-items: center;
     justify-content: space-around;
     height: 75px;
+    max-height: 300px;
 }
 .nav-bar{
     display: flex;
@@ -52,6 +53,17 @@ header{
 }
 .navbar-collapse{
     flex-grow: 0;
+}
+@media (max-width: 991px){
+    .nav-bar{
+        width: auto;
+    }
+    .nav-bar a{
+        margin: 10px 0 10px 0;
+    }
+    .nav{
+        height: auto;
+    }
 }
 
 .main-box-container{
