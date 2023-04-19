@@ -50,6 +50,9 @@ header{
     color: white;
     transition: color .15s ease-in-out,background-color .15s ease-in-out;
 }
+.navbar-collapse{
+    flex-grow: 0;
+}
 
 .main-box-container{
     margin-top: 80px;
