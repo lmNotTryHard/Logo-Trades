@@ -219,8 +219,7 @@ header{
     .main-box-login{
         justify-content: center;
         padding-right: 0;
-        background-image: none;
-        background-color: #0A2640;
+        background-image: url(img/header-background.png);
     }
     .main-box img{
         max-width: 350px;
