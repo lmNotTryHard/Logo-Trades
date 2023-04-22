@@ -17,6 +17,7 @@ body{
     cursor: default;
 }
 
+/* header navbar */
 header{
     background-image: url(img/header-background.png);
     background-size: 100% 100%;
@@ -62,17 +63,6 @@ header{
 }
 .navbar-collapse{
     flex-grow: 0;
-}
-@media (max-width: 991px){
-    .nav-bar{
-        width: auto;
-    }
-    .nav-bar a{
-        margin: 10px 0 10px 0;
-    }
-    .nav{
-        height: auto;
-    }
 }
 
 /* header */
@@ -193,7 +183,14 @@ header{
 }
 @media (max-width: 991px) {
     .nav{
-        margin-top: 10px;
+        margin-top: 10px;        
+        height: auto;
+    }    
+    .nav-bar{
+        width: auto;
+    }
+    .nav-bar a{
+        margin: 10px 0 10px 0;
     }
     .header-container{
         margin-top: 100px;

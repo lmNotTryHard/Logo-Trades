@@ -17,6 +17,7 @@ body{
     cursor: default;
 }
 
+/* header nav */
 .nav{
     display: flex;
     align-items: center;
@@ -52,18 +53,8 @@ body{
 .navbar-collapse{
     flex-grow: 0;
 }
-@media (max-width: 991px){
-    .nav-bar{
-        width: auto;
-    }
-    .nav-bar a{
-        margin: 10px 0 10px 0;
-    }
-    .nav{
-        height: auto;
-    }
-}
 
+/* main */
 .main-txt{
     margin-top: 120px;
 }
@@ -73,21 +64,25 @@ body{
     align-items: center;
     justify-content: space-around;
     height: 600px;
-    width: 1200px;
+    max-width: 1200px;
+    padding: 50px 40px 50px 40px;
     border-radius: 50px;
     background-color: #053F74CC;
 }
 .main-box-container p{
     color: white;
-    font-size: 1.5em;
-    width: 380px;
+    font-size: 1.4em;
+    max-width: 380px;
+}
+.main-box-container img{
+    max-width: 45%;
 }
 .main-box{
     margin-top: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 1200px;
+    max-width: 1200px;
 }
 .container{
     padding: 0;
@@ -95,6 +90,11 @@ body{
 .carousel-item{
     height: 700px;
 }
+.carousel-item img{
+    object-fit: cover;
+}
+
+/* footer */
 .footer-container{
     display: flex;
     align-items: center;
@@ -111,4 +111,57 @@ body{
     font-size: 1.1em;
     color: black;
     text-decoration: none;
+}
+
+/* adaptive */
+@media (max-width: 991px) {
+    .nav{       
+        height: auto;
+    }    
+    .nav-bar{
+        width: auto;
+    }
+    .nav-bar a{
+        margin: 10px 0 10px 0;
+    }
+}
+@media (max-width: 768px) {
+    .main-box-container{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        max-width: 600px;
+        padding: 50px 20px 50px 20px;
+    }
+    .main-box{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        max-width: 600px;
+    }
+    .main-box-container img{
+        max-width: 400px;
+        width: 100%;
+    }
+    .main-box-container p{
+        text-align: center;
+        max-width: 350px;
+    }
+    .button-2{
+        padding: 8px 70px 8px 70px;
+    }
+}
+@media (max-width: 600px) {
+    .main-box-container{
+        max-width: 450px;
+    }
+    .footer-container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .table-box{
+        margin: 20px;
+    }
 }
