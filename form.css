@@ -1,3 +1,17 @@
+body::-webkit-scrollbar {
+    width: 10px;               /* ширина scrollbar */
+}
+  body::-webkit-scrollbar-track {
+    background: #ffffff;        /* цвет дорожки */
+}
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.400);    /* цвет плашки */
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     display: flex;
     align-items: center;
@@ -6,7 +20,10 @@ body{
     background-image: url(img/form-background.png);
     background-size: cover;
     cursor: default;
+    font-family: 'Inria Sans', sans-serif;
 }
+
+/* form */
 .form-box{
     display: flex;
     align-items: center;
@@ -16,7 +33,7 @@ body{
     border: 3px solid #FFFFFF66;
     border-radius: 20px;
     height: 600px;
-    width: 600px;
+    max-width: 600px;
     font-size: 1.1em;
 }
 .register{
@@ -24,13 +41,32 @@ body{
 }
 .input{
     background: rgba(255, 255, 255, 0.13);
+    padding: 10px 35px 10px 35px;
+    border-radius: 60px;
+    font-size: 1.3em;
 }
 .button-4{
-    padding: 10px 140px 10px 140px;
+    width: 100%;
     font-size: 1.5em;
+    border-radius: 60px;
 }
 .form-box a{
     text-decoration: none;
     color: #ADADADA8;
     font-size: 1.1em;
+}
+
+/* adaptive */
+@media (max-width: 600px) {
+    .form-box{
+        max-width: 450px;
+    }
+}
+@media (max-width: 450px) {
+    .form-box{
+        max-width: 300px;
+    }
+    .input{
+        font-size: 1em
+    }
 }
